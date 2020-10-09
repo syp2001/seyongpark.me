@@ -18,21 +18,43 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+title: Seyong Park
+email: seyongpark2001@gmail.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://seyongpark.me" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  syp2001
+repository: "syp2001/seyongpark.me"
+logo: "/assets/images/icon.svg"
+breadcrumbs: true
+
+author:
+  name     : "Seyong Park"
+  avatar   : "/assets/images/bio.jpg"
+  bio      : "Student at the University of Maryland"
+  location : "Bethesda, MD"
+  links:
+    - label: "seyongpark.me"
+      icon: "fas fa-fw fa-link"
+      url: "https://seyongpark.me"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/syp2001"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/syp2001"
+
+
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "default"
+
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
